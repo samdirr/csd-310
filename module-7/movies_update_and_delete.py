@@ -58,12 +58,12 @@ try:
             genre_id
         )
         VALUES (
-            'The Dark Knight',
-            2008,
-            152,
-            'Christopher Nolan',
-            (SELECT studio_id FROM studio WHERE studio_name = 'Warner Bros.'),
-            (SELECT genre_id FROM genre WHERE genre_name = 'Action')
+            'Halloween',
+            2018,
+            106,
+            'David Gordon Green',
+            (SELECT studio_id FROM studio WHERE studio_name = 'Blumhouse Productions'),
+            (SELECT genre_id FROM genre WHERE genre_name = 'Horror')
         )
     """)
     db.commit()
